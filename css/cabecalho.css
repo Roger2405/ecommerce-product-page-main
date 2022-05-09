@@ -1,0 +1,27 @@
+.cabecalho {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    background-color: var(--branco);
+    width: 100vw;
+    height: 3rem;
+}
+
+.cabecalho img{
+    height: 1rem;
+}
+.cabecalho__menu {
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    z-index: 10;
+}
+.cabecalho__logo {
+    margin: 1rem 2rem;
+}
+.cabecalho__carrinho {
+    margin-left: auto;
+    margin-right: 1rem;
+}

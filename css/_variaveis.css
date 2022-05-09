@@ -1,0 +1,17 @@
+
+
+:root {
+    --azul-escuro: hsl(220, 13%, 13%);
+    --azul-cinzento-escuro: hsl(219, 9%, 45%);
+    --azul-cinzento: hsl(220, 14%, 75%);
+    --azul-cinzento-claro: hsl(223, 64%, 98%);
+    --branco: hsl(0, 0%, 100%);
+    --preto-transparente: hsla(0, 0%, 0%, 0.377);
+    --laranja: hsl(26, 100%, 55%);
+    --laranja-claro: hsl(25, 100%, 94%);
+
+    --fonte-corpo: 'Kumbh Sans', sans-serif;
+
+    --peso-texto-normal: 400;
+    --peso-texto-destaque: 700;
+}

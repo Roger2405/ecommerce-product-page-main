@@ -1,0 +1,21 @@
+@import url(_variaveis.css);
+
+* {
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+}
+.conteudo-ofuscado {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--preto-transparente);
+
+    position: absolute;
+    z-index: 1;
+
+    transition: .5s;
+    
+}
+.container {
+    padding: 15px 25px;
+}

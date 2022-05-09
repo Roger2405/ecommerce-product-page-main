@@ -1,0 +1,18 @@
+.principal__imagem img{
+    width: 100vw;
+    top: 0;
+}
+
+.principal__produto h2{
+    color: var(--laranja);
+    font-variant-caps:all-petite-caps;
+}
+.texto-destaque {
+    font-size: 1.75rem;
+    font-weight: var(--peso-texto-destaque);
+    margin: 1rem 0;
+}
+
+.principal__produto-precos {
+    display: flex;
+}
