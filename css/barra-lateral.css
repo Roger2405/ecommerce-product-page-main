@@ -13,6 +13,8 @@
     background-color: var(--branco);
     z-index: 2;
 
+    box-shadow: 60vw 0 0 var(--preto-transparente);
+    
     transition: .5s;
 }
 .barra-lateral img{
@@ -35,6 +37,7 @@
 
 .barra-lateral--oculta {
     left: -100vw;
+    box-shadow: none;
 
     transition: .5s;
 }

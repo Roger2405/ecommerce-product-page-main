@@ -1,6 +1,7 @@
 .principal__imagem img{
     width: 100vw;
     top: 0;
+    left: 0;
 }
 
 .principal__produto h2{
@@ -10,9 +11,43 @@
 .texto-destaque {
     font-size: 1.75rem;
     font-weight: var(--peso-texto-destaque);
-    margin: 1rem 0;
+    margin: .5rem 0;
+}
+
+
+.texto {
+    color: var(--azul-cinzento-escuro);
+    font-weight: var(--peso-texto-normal);
 }
 
 .principal__produto-precos {
     display: flex;
+    align-items: center;
+    font-weight: var(--peso-texto-destaque);
+}
+.porcentagem-de-desconto {
+    color: var(--laranja);
+    margin: 1rem;
+    background-color: var(--laranja-claro);
+    padding: .25rem .5rem;
+    border-radius: 5px;
+    
+}
+
+.preco-antigo {
+    margin-left: auto;
+    color: var(--azul-cinzento);
+}
+
+.principal__carrinho-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: .5rem 0;
+    background-color: var(--azul-cinzento-claro);
+    border-radius: 10px;
+}
+.principal__carrinho-quantidade img {
+    padding: 1.5rem;
 }

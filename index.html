@@ -25,7 +25,7 @@
   </style>
 </head>
 <body>
-  <span class="conteudo-ofuscado"></span>
+  <span class=""></span>
   <header class="cabecalho">
     <img class="cabecalho__menu" src="images/icon-menu.svg" alt="">
     <img class="cabecalho__logo" src="images/logo.svg" alt="">
@@ -42,9 +42,9 @@
   </nav>
 
   <main class="principal">
-    <article class="principal__imagem">
+    <section class="principal__imagem">
       <img src="images/image-product-1.jpg" alt="">
-    </article>
+    </section>
 
     <section class="container principal__produto">
       <h2>Sneaker Company</h2>
@@ -57,13 +57,18 @@
       </p>
       <div class="principal__produto-precos">
         <p class="texto-destaque">$125.00</p>
-        <p>50%</p>
-        <p>$250.00</p>
+        <p class="porcentagem-de-desconto">50%</p>
+        <p class="preco-antigo"><del>$250.00</del></p>
       </div>
-      <p>0</p>
-      <button>Add to cart</button>
-    
+    </section>
 
+    <section class="container principal__carrinho">
+      <div class="principal__carrinho-quantidade">
+        <img src="images/icon-minus.svg" alt="">
+        <p><b>0</b></p>
+        <img src="images/icon-plus.svg" alt="">
+      </div>
+      <button>Add to cart</button>
     </section>
   </main>
   
