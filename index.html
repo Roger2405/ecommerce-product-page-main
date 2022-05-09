@@ -45,8 +45,8 @@
     <section class="principal__imagem">
       <img src="images/image-product-1.jpg" alt="">
     </section>
-
-    <section class="container principal__produto">
+<!--
+  <section class="container principal__produto">
       <h2>Sneaker Company</h2>
   
       <h3 class="texto-destaque">Fall Limited Edition Sneakers</h3>
@@ -55,7 +55,7 @@
         These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-      <div class="principal__produto-precos">
+      <div class="principal__produto--precos">
         <p class="texto-destaque">$125.00</p>
         <p class="porcentagem-de-desconto">50%</p>
         <p class="preco-antigo"><del>$250.00</del></p>
@@ -63,22 +63,50 @@
     </section>
 
     <section class="container principal__carrinho">
-      <div class="principal__carrinho-quantidade">
+      <div class="botao-arredondado principal__carrinho--quantidade">
         <img src="images/icon-minus.svg" alt="">
         <p><b>0</b></p>
         <img src="images/icon-plus.svg" alt="">
       </div>
-      <button>Add to cart</button>
+      
+      <button class="botao-arredondado principal__carrinho--botao">
+        <img class="imagem-carrinho" src="./images/icon-cart.svg">
+        <p>Add to cart</p>
+      </button>
+    </section>
+-->
+    <section>
+      <div class="container principal__produto">
+        <h2>Sneaker Company</h2>
+        <h3 class="texto-destaque">Fall Limited Edition Sneakers</h3>
+      
+        <p class="texto">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="principal__produto--precos">
+          <p class="texto-destaque">$125.00</p>
+          <p class="porcentagem-de-desconto">50%</p>
+          <p class="preco-antigo"><del>$250.00</del></p>
+        </div>
+      </div>
+      <div class="container principal__carrinho">
+        <div class="botao-arredondado principal__carrinho--quantidade">
+          <img src="images/icon-minus.svg" alt="">
+          <p><b>0</b></p>
+          <img src="images/icon-plus.svg" alt="">
+        </div>
+      
+        <button class="botao-arredondado principal__carrinho--botao">
+          <img class="imagem-carrinho" src="./images/icon-cart.svg">
+          <p>Add to cart</p>
+        </button>
+      </div>
     </section>
   </main>
   
 
  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
   <script src="index.js"></script>
 
 </body>

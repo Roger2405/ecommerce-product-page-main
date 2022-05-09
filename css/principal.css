@@ -18,20 +18,20 @@
 .texto {
     color: var(--azul-cinzento-escuro);
     font-weight: var(--peso-texto-normal);
+    padding: 1rem 0;
 }
 
-.principal__produto-precos {
+.principal__produto--precos {
     display: flex;
     align-items: center;
     font-weight: var(--peso-texto-destaque);
 }
 .porcentagem-de-desconto {
     color: var(--laranja);
-    margin: 1rem;
+    margin: 0 1rem;
     background-color: var(--laranja-claro);
     padding: .25rem .5rem;
     border-radius: 5px;
-    
 }
 
 .preco-antigo {
@@ -39,15 +39,45 @@
     color: var(--azul-cinzento);
 }
 
-.principal__carrinho-quantidade {
+.principal__carrinho--quantidade {
+    justify-content: space-between;
+    
+    background-color: var(--azul-cinzento-claro);    
+}
+.principal__carrinho--quantidade img {
+    padding: 0 1rem;
+}
+.principal__carrinho--botao {
+    background-color: var(--laranja);
+    width: 100%;
+    color: var(--branco);
+    font-weight: var(--peso-texto-destaque);
+    justify-content: center;
+}
+
+.botao-arredondado {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    margin: .5rem 0;
-    background-color: var(--azul-cinzento-claro);
+    margin: 1rem 0;
     border-radius: 10px;
+    border: none;
+    padding: 1.25rem 0;
 }
-.principal__carrinho-quantidade img {
-    padding: 1.5rem;
+.imagem-carrinho {
+    padding: 0 1rem;
+}
+
+@media screen and (min-width:1440px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 7rem;
+
+        width: 100vw;
+        padding: 10rem 15rem;
+    }
+    .principal__imagem img {
+        width: 100%;
+        border-radius: 20px;
+    }
 }
