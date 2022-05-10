@@ -1,0 +1,29 @@
+.descricao__precos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: var(--peso-texto-destaque);
+}
+
+.descricao__precos--desconto {
+    color: var(--laranja);
+    margin: 0 1rem;
+    background-color: var(--laranja-claro);
+    padding: .25rem .5rem;
+    border-radius: 5px;
+}
+
+.descricao__precos--preco-antigo {
+    margin-left: auto;
+    color: var(--azul-cinzento);
+}
+
+@media screen and (min-width:1440px) {
+    .descricao__precos {
+        width: 50%;
+    }
+    .descricao__precos--preco-antigo{
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}

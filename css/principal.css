@@ -1,71 +1,11 @@
-.principal__imagem img{
+.imagem-principal {
     width: 100vw;
     top: 0;
     left: 0;
 }
 
-.principal__produto h2{
-    color: var(--laranja);
-    font-variant-caps:all-petite-caps;
-}
-.texto-destaque {
-    font-size: 1.75rem;
-    font-weight: var(--peso-texto-destaque);
-    margin: .5rem 0;
-}
+/*---------------------------------*/
 
-
-.texto {
-    color: var(--azul-cinzento-escuro);
-    font-weight: var(--peso-texto-normal);
-    padding: 1rem 0;
-}
-
-.principal__produto--precos {
-    display: flex;
-    align-items: center;
-    font-weight: var(--peso-texto-destaque);
-}
-.porcentagem-de-desconto {
-    color: var(--laranja);
-    margin: 0 1rem;
-    background-color: var(--laranja-claro);
-    padding: .25rem .5rem;
-    border-radius: 5px;
-}
-
-.preco-antigo {
-    margin-left: auto;
-    color: var(--azul-cinzento);
-}
-
-.principal__carrinho--quantidade {
-    justify-content: space-between;
-    
-    background-color: var(--azul-cinzento-claro);    
-}
-.principal__carrinho--quantidade img {
-    padding: 0 1rem;
-}
-.principal__carrinho--botao {
-    background-color: var(--laranja);
-    width: 100%;
-    color: var(--branco);
-    font-weight: var(--peso-texto-destaque);
-    justify-content: center;
-}
-
-.botao-arredondado {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    border-radius: 10px;
-    border: none;
-    padding: 1.25rem 0;
-}
-.imagem-carrinho {
-    padding: 0 1rem;
-}
 
 @media screen and (min-width:1440px) {
     .principal {
@@ -76,7 +16,7 @@
         width: 100vw;
         padding: 10rem 15rem;
     }
-    .principal__imagem img {
+    .imagem-principal {
         width: 100%;
         border-radius: 20px;
     }
