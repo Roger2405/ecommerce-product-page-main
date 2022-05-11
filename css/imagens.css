@@ -1,0 +1,36 @@
+.imagens {
+    display: grid;
+    grid-template-rows: 5fr auto;
+
+    gap: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 0) {
+    .imagem-principal {
+        width: 100vw;
+        top: 0;
+        left: 0;
+    }
+    .imagens-secundarias {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .imagem-principal {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .imagens-secundarias {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+    }
+    .imagens-secundarias img {
+        width: inherit;
+        border-radius: .5rem;
+    }
+}
