@@ -11,3 +11,21 @@ botaoMenu.addEventListener("click", function(){
 botaoFechar.addEventListener("click", function(){
     barraNav.classList.add("barra-lateral--oculta");
 })
+
+var imagens = document.querySelectorAll(".thumbnail");
+
+imagens.forEach(imagem => {
+    imagem.addEventListener("click", function(){
+        var imagemPrincipal = document.querySelector(".imagem-principal");
+        var imagemAtivaAntiga = document.querySelector(".imagem-ativa");
+        imagemAtivaAntiga.classList.remove("imagem-ativa");
+        imagem.classList.toggle("imagem-ativa");
+
+        var srcImagemAtiva = imagem.src;
+        
+        srcImagemAtiva = srcImagemAtiva.replace("-thumbnail", "");
+
+        imagemPrincipal.src = srcImagemAtiva;
+    })
+    
+});
