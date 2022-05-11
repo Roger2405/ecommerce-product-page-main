@@ -14,6 +14,12 @@ botaoFechar.addEventListener("click", function(){
 
 var imagens = document.querySelectorAll(".thumbnail");
 
+var imagemPrincipal = document.querySelector(".imagem-principal");
+var imagensDestaque = document.querySelector(".imagens-destaque");
+imagemPrincipal.addEventListener("click", function(){
+    imagensDestaque.classList.toggle("imagens-destaque-ativo");
+})
+
 imagens.forEach(imagem => {
     imagem.addEventListener("click", function(){
         var imagemPrincipal = document.querySelector(".imagem-principal");
