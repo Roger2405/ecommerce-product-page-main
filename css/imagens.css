@@ -10,78 +10,56 @@
     top: 0;
     left: 0;
 }
-.imagens-secundarias {
+
+.lightbox, .imagens-secundarias {
     display: none;
 }
-.lightbox {
-    display: none;
-    position: fixed;
+.icone-p, .icone-n {
+    position: absolute;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.setas {
+    width: 45vw;
+    position: absolute;
+}
+.icone-p {  
     left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.596);
 }
-
-.imagens-lightbox {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-    
-    width: 40%;
-    height: 80%;
-
-    margin: 5rem auto;
-    
-}
-.botao-fechar {
-    position: relative;
-    margin-left: auto;
-    margin-bottom: 1.5rem;
-    left: 0;
-    top: 0;
-
-    width: 1.5rem;
-    filter:brightness(10);
-}
-.lightbox-ativo {
-    display: inline-block;
-}
-.imagem-principal-lightbox {
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 2rem;
-}
-.imagens-secundarias-lightbox {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 3rem;
-}
-.thumbnail-lightbox {
-    width: 20%;
-    border-radius: .5rem;
+.icone-n {
+    right: 0;
 }
 
 @media screen and (min-width:1440px) {
     .imagens {
         gap: 2rem;
     }
-    .imagem-principal {
+    .imagem-principal  {
         width: 100%;
+        border-radius: 20px;
     }
     .imagens-secundarias {
         display: flex;
-        width: 100%;
-        gap: 2rem;
+        justify-content: space-between;
+        min-width: 80%;  
+        max-width: 100%;
+        gap: 1.5rem;
     }
-
-
+    .imagens-lightbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 40%; 
+        max-height: 80%;
+        margin: 7rem auto; 
+    }
     .thumbnail {
-        border-radius: .5rem;
+        border-radius: 1rem;
         transition: .25s;
-        width: inherit;
+        width: 100%;
     }
     .thumbnail:hover {
         cursor: pointer;
@@ -92,5 +70,27 @@
         opacity: 0.4;
         border: 3px solid var(--laranja);
     }
+    .lightbox-ativo {
+        display: inline-block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.596);
 
+        opacity: 1;
+
+        transition: 5s;
+    }
+    .lightbox-ativo .imagens-secundarias {
+        padding: 0 2rem;
+    }
+    .botao-fechar {
+        position: relative;
+        margin-left: auto;
+        width: 1.5rem;
+        filter:brightness(10);
+    }
+    
 }
