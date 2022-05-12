@@ -2,7 +2,6 @@
     display: grid;
     grid-template-rows: 5fr auto;
     gap: 0;
-
 }
 
 .imagem-principal {
@@ -20,16 +19,6 @@
     padding: 1.5rem;
     border-radius: 50%;
 }
-.setas {
-    width: 45vw;
-    position: absolute;
-}
-.icone-p {  
-    left: 0;
-}
-.icone-n {
-    right: 0;
-}
 
 @media screen and (min-width:1440px) {
     .imagens {
@@ -39,6 +28,9 @@
         width: 100%;
         border-radius: 20px;
     }
+    .imagens-lightbox > .imagem-principal {
+        height: auto;
+    }
     .imagens-secundarias {
         display: flex;
         justify-content: space-between;
@@ -47,14 +39,14 @@
         gap: 1.5rem;
     }
     .imagens-lightbox {
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        width: 40%; 
-        max-height: 80%;
-        margin: 7rem auto; 
+        height: 60vh;
+        margin: 20vh 30vw;
     }
     .thumbnail {
         border-radius: 1rem;
@@ -81,9 +73,6 @@
 
         opacity: 1;
 
-    }
-    .lightbox-ativo .imagens-secundarias {
-        padding: 0 2rem;
     }
     .botao-fechar {
         position: relative;
