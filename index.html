@@ -1,113 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/barra-lateral.css">
-  <link rel="stylesheet" href="css/cabecalho.css">
-  <link rel="stylesheet" href="css/principal.css">
-
-  <link rel="stylesheet" href="./css/imagens.css">
-
-  <link rel="stylesheet" href="css/descricao/descricao.css">
-  <link rel="stylesheet" href="css/descricao/descricao-carrinho.css">
-  <link rel="stylesheet" href="css/descricao/descricao-precos.css">
-
-
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/barra-lateral.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/principal.css">
+    
+    <link rel="stylesheet" href="./css/imagens.css">
+    
+    <link rel="stylesheet" href="css/descricao/descricao.css">
+    <link rel="stylesheet" href="css/descricao/descricao-carrinho.css">
+    <link rel="stylesheet" href="css/descricao/descricao-precos.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    
+    
+    
+    <title>Frontend Mentor | E-commerce product page</title>
+    
+    
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
 </head>
 <body>
-  <span class=""></span>
-  <header class="cabecalho">
-    <img class="cabecalho__menu" src="images/icon-menu.svg" alt="">
-    <img class="cabecalho__logo" src="images/logo.svg" alt="">
-    <img class="cabecalho__carrinho" src="images/icon-cart.svg" alt="">
-    <img class="cabecalho__avatar"src="images/image-avatar.png" alt="">
-  </header>
-  <nav class="barra-lateral barra-lateral--oculta">
-    <img class="barra-lateral__close" src="images/icon-close.svg" alt="">
-    <a href="#" class="barra-lateral__link">Collections</a>
-    <a href="#" class="barra-lateral__link">Men</a>
-    <a href="#" class="barra-lateral__link">Women</a>
-    <a href="#" class="barra-lateral__link">About</a>
-    <a href="#" class="barra-lateral__link">Contact</a>
-  </nav>
+    <span class=""></span>
+    <header class="cabecalho">
+        <img class="cabecalho__menu" src="images/icon-menu.svg" alt="">
+        <img class="cabecalho__logo" src="images/logo.svg" alt="">
+        <img class="cabecalho__carrinho" src="images/icon-cart.svg" alt="">
+        <img class="cabecalho__avatar"src="images/image-avatar.png" alt="">
+        <nav class="barra-lateral barra-lateral--oculta">
+            <img class="barra-lateral__close" src="images/icon-close.svg" alt="">
+            <a href="#" class="barra-lateral__link">Collections</a>
+            <a href="#" class="barra-lateral__link">Men</a>
+            <a href="#" class="barra-lateral__link">Women</a>
+            <a href="#" class="barra-lateral__link">About</a>
+            <a href="#" class="barra-lateral__link">Contact</a>
+        </nav>
+    </header>
 
-  <main class="principal">
-    <section class="imagens">
-      <img class="imagem-principal" src="images/image-product-1.jpg" alt="">
-      <div class="imagens-secundarias">
-        <img class="thumbnail imagem-ativa" src="./images/image-product-1-thumbnail.jpg" alt="">
-        <img class="thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="">
-        <img class="thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="">
-        <img class="thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="">
-      </div>
-
-      </div>
-    </section>
-    <section class="imagens lightbox" >
-        <div class="imagens-lightbox">
-          <img class="botao-fechar" src="./images/icon-close.svg" alt="">
-          <img  class="imagem-principal" src="images/image-product-1.jpg" alt="">
-          <div class="imagens-secundarias">
-            <img class="thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="">
-            <img class="thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="">
-            <img class="thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="">
-            <img class="thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="">
-          </div>
+    
+    <main class="principal">
+        <section class="imagens">
+            <img class="imagem-principal imagem" src="images/image-product-1.jpg" alt="">
+            <div class="imagens-secundarias">
+                <img class="thumbnail imagem-ativa" src="./images/image-product-1-thumbnail.jpg" alt="">
+                <img class="thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="">
+                <img class="thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="">
+                <img class="thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="">
+            </div>
         </div>
     </section>
+    
+    <div class="div-lightbox">
+        <div class="lightbox">
+            <div class="lightbox__content">
+                <button class="botao-fechar">
+                    <img src="./images/icon-close.svg" alt="">
+                </button>
 
-    <section class="container">
-      <div class="descricao">
-        <h2 class="descricao__titulo">Sneaker Company</h2>
-        <h3 class="descricao__sub-titulo texto-destaque">Fall Limited Edition Sneakers</h3>
-      
-        <p class="descricao__texto">
-          These low-profile sneakers are your perfect casual wear companion. Featuring a
-          durable rubber outer sole, they’ll withstand everything the weather can offer.
-        </p>
-        <div class="descricao__precos">
-          <p class="texto-destaque">$125.00</p>
-          <p class="descricao__precos--desconto">50%</p>
-          <p class="descricao__precos--preco-antigo"><del>$250.00</del></p>
+                <img  class="imagem-principal-lightbox imagem" src="images/image-product-1.jpg" alt="">
+
+                <div class="imagens-secundarias-lightbox">
+                    <img class="thumbnail imagem" src="./images/image-product-1-thumbnail.jpg" alt="">
+                    <img class="thumbnail imagem" src="./images/image-product-2-thumbnail.jpg" alt="">
+                    <img class="thumbnail imagem" src="./images/image-product-3-thumbnail.jpg" alt="">
+                    <img class="thumbnail imagem" src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+
+                <div class="changeImgButtons">
+                    <button id="left-button" class="imgButton"><</button>
+                    <button id="right-button" class="imgButton">></button>
+                </div>
+            </div>
         </div>
-        <div class="descricao__carrinho">
-          <div class="botao-arredondado descricao__carrinho--quantidade">
-            <img src="images/icon-minus.svg" alt="">
-            <p><b>0</b></p>
-            <img src="images/icon-plus.svg" alt="">
-          </div>
-            <button class="botao-arredondado descricao__carrinho--botao">
-            <img class="imagem-carrinho" src="./images/icon-cart.svg">
-            <p>Add to cart</p>
-          </button>
-      </div>
+    </div>
 
-      
-      
-      </div>
+
+    <section class="content">
+        <div class="descricao">
+            <h2 class="descricao__titulo">Sneaker Company</h2>
+            <h3 class="descricao__sub-titulo texto-destaque">Fall Limited Edition Sneakers</h3>
+            
+            <p class="descricao__texto">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="descricao__precos">
+                <p class="texto-destaque">$125.00</p>
+                <p class="descricao__precos--desconto">50%</p>
+                <p class="descricao__precos--preco-antigo"><del>$250.00</del></p>
+            </div>
+            <div class="descricao__carrinho">
+                <div class="botao-arredondado descricao__carrinho--quantidade">
+                    <img src="images/icon-minus.svg" alt="">
+                    <p><b>0</b></p>
+                    <img src="images/icon-plus.svg" alt="">
+                </div>
+                <button class="botao-arredondado descricao__carrinho--botao">
+                    <img class="imagem-carrinho" src="./images/icon-cart.svg">
+                    <p>Add to cart</p>
+                </button>
+            </div>
+            
+            
+            
+        </div>
     </section>
-  </main>
-  
+</main>
 
- 
-  <script src="./js/menu.js"></script>
-  <script src="./js/imagens.js"></script>
+
+
+<script src="./js/menu.js"></script>
+<script src="./js/toggleLightbox.js"></script>
+<script src="./js/changeImages.js"></script>
 
 </body>
 </html>
