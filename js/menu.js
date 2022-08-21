@@ -1,14 +1,10 @@
 
-var botaoMenu = document.querySelector(".cabecalho__menu");
-var botaoFechar = document.querySelector(".barra-lateral__close");
-var barraNav = document.querySelector(".barra-lateral");
+var botaoMenu = document.querySelector(".cabecalho__menu--botao");
+var barraNav = document.querySelector(".cabecalho__menu--nav");
 
 
 botaoMenu.addEventListener("click", function(){
-    barraNav.classList.remove("barra-lateral--oculta");
-})
-botaoFechar.addEventListener("click", function(){
-    barraNav.classList.add("barra-lateral--oculta");
+    barraNav.classList.toggle('nav-oculto');
 })
 
 

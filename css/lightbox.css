@@ -20,15 +20,20 @@
     max-width: 500px;
 }
 .botao-fechar {
+    margin-left: auto;
+
     background-color: unset;
     border: none;
     width: 25px;
     height: 25px;
-    margin-bottom: 2rem;
 }
 .botao-fechar > img {
     height: 100%;
     width: 100%;
+    filter:brightness(300%);
+}
+.botao-fechar:hover > img {
+    filter: brightness(150%) sepia(250%);
 }
 
 .lightbox__content {
@@ -65,7 +70,4 @@
     font-weight: 700;
     position: relative;
     width: 4rem;
-}
-.hide{
-    opacity: 0;
 }
