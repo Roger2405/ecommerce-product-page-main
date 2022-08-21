@@ -24,30 +24,38 @@
     .imagens {
         gap: 2rem;
     }
-    .imagem {
-        border-radius: 20px;
+    .imagens img {
+        border-radius: 1rem;
     }
 
     .imagem-principal  {
         width: 100%;
     }
+
     .imagens-secundarias {
         display: flex;
         justify-content: space-between;
-        gap: 1.5rem;
     }
+    
     .thumbnail {
-        border-radius: 1rem;
+        margin: 0 .5rem;
+        width: calc(25% - 1rem);
         transition: .25s;
-        width: 100%;
     }
-    .thumbnail:hover {
+    .thumbnail:first-child {
+        margin-left: 0;
+    }
+    .thumbnail:last-child {
+        margin-right: 0;
+    }
+    .thumbnail:hover:not(.imagem-ativa) {
+        transform: translateY(-.25rem);
         cursor: pointer;
-        filter:opacity(0.5);
+        filter:drop-shadow(0 .25rem 0 black) ;
         transition: .25s;
     }
     .thumbnail.imagem-ativa {
-        opacity: 0.4;
+        filter: brightness(110%);
         border: 3px solid var(--laranja);
     }
     

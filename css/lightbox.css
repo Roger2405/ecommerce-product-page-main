@@ -38,7 +38,6 @@
 
 .lightbox__content > .imagens-secundarias-lightbox {
     display: flex;
-    margin-top: 2rem;
     padding: 0 .5rem;
 }
 .lightbox__content > .imagens-secundarias-lightbox > img {
@@ -53,10 +52,10 @@
     height: 4rem;
     width: 100%;
 }
-#left-button {
+#leftButton {
     left: -2rem;
 }
-#right-button {
+#rightButton {
     right: -2rem;
 }
 .imgButton {
@@ -66,4 +65,7 @@
     font-weight: 700;
     position: relative;
     width: 4rem;
+}
+.hide{
+    opacity: 0;
 }
