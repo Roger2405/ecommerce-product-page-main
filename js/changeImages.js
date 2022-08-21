@@ -43,7 +43,7 @@ rightButton.addEventListener('click', () => {
 });
 leftButton.addEventListener('click', () => {
     leftImage();
-})
+});
 
 window.addEventListener('keydown', () => {
     if(window.event.keyCode == '37') {
