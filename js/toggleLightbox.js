@@ -14,6 +14,15 @@ botaoFechar.addEventListener("click", function(){
     
 });
 
+window.onresize = () => {
+    if(window.innerWidth <= 1440) {
+        if(lightbox.className.includes('lightbox-ativo')) {
+            lightbox.classList.remove("lightbox-ativo");
+            
+        }
+    }
+}
+
 
 window.addEventListener('keydown', () => {
     if(window.event.keyCode == '27') {
