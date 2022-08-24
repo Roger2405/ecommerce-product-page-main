@@ -65,12 +65,11 @@
     background-color: white;
     box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.25);
     border-radius: .75rem;
-    
-    position: absolute;
-    right: -5rem;
-    top: -1rem;
-
-    width: 400px;
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    margin: 1rem;
+    width: calc(100vw - 2rem);
 }
 .carrinho__popup--titulo {
     padding: 1.5rem;
@@ -86,12 +85,14 @@
     gap: 1.5rem;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .carrinho__popup {
-        position: fixed;
-        top: 4.5rem;
-        left: 0;
-        margin: 1rem;
-        width: calc(100vw - 2rem);
+        
+        position: absolute;
+        right: -9rem;
+        top: -2rem;
+        left: auto;
+        width: 400px;
     }
+    
 }
