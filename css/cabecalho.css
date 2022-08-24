@@ -19,6 +19,7 @@
 }
 .cabecalho__carrinho {
     margin-right: 1rem;
+    z-index: 10;
 }
 .cabecalho__menu {
     height: 100vh;
@@ -26,7 +27,7 @@
     top: 0;
     width: 100vw;
     position: fixed;
-    z-index: 10;
+    z-index: 5;
     transition: .5s;
 }
 .cabecalho__menu--botao {
@@ -52,16 +53,17 @@
     height: 3rem;
 }
 .nav-oculto {
-    transform: translateX( -100vw);
+    
+    transform:scaleY(0) translateY(-100vh) translateX( -100vw);
     transition: .5s;
 }
 
 @media screen and (min-width:1440px) {
 
     .cabecalho {
-        margin: 0 7rem;
+        margin: 0 15vw;
         padding: 0;
-        width: calc(100% - 14rem);
+        width: calc(100% - 30vw);
         border-bottom: 1px solid var(--azul-cinzento);
         position: relative;
     }

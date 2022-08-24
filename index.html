@@ -9,16 +9,15 @@
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/barra-lateral.css">
     <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/principal.css">
     
     <link rel="stylesheet" href="./css/imagens.css">
     
-    <link rel="stylesheet" href="css/descricao/descricao.css">
-    <link rel="stylesheet" href="css/descricao/descricao-carrinho.css">
-    <link rel="stylesheet" href="css/descricao/descricao-precos.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/precos.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/pedido.css">
     
     
     
@@ -79,31 +78,35 @@
         </div>
     </div>
     
-    
     <section class="content">
-        <div class="descricao">
-            <h2 class="descricao__titulo">Sneaker Company</h2>
-            <h3 class="descricao__sub-titulo texto-destaque">Fall Limited Edition Sneakers</h3>
+            <h2 class="subtitulo">Sneaker Company</h2>
+            <h1 class="titulo texto-destaque" name="nomeProduto">Fall Limited Edition Sneakers</h1>
             
-            <p class="descricao__texto">
+            <p class="descricao">
                 These low-profile sneakers are your perfect casual wear companion. Featuring a
                 durable rubber outer sole, they’ll withstand everything the weather can offer.
             </p>
-            <div class="descricao__precos">
-                <p class="texto-destaque">$125.00</p>
-                <p class="descricao__precos--desconto">50%</p>
-                <p class="descricao__precos--preco-antigo"><del>$250.00</del></p>
+            <div class="precos">
+                <p class="texto-destaque precos__preco" name="precoProduto">$125.00</p>
+                <p class="precos__desconto">50%</p>
+                <p class="precos__precoAntigo"><del>$250.00</del></p>
             </div>
-            <div class="descricao__carrinho">
-                <div class="botao-arredondado descricao__carrinho--quantidade">
-                    <img src="images/icon-minus.svg" alt="">
-                    <p><b>0</b></p>
-                    <img src="images/icon-plus.svg" alt="">
+            <div class="carrinho">
+                <div class="elemento-arredondado carrinho__quantidade">
+                    <button class="carrinho__quantidade--botao" id="botaoCarrinho-minus"><img src="images/icon-minus.svg" alt=""></button>
+                    <p class="texto-destaque carrinho__quantidade--texto">0</p>
+                    <button class="carrinho__quantidade--botao" id="botaoCarrinho-plus"><img src="images/icon-plus.svg" alt=""></button>
                 </div>
-                <button class="botao-arredondado descricao__carrinho--botao">
+                <button class="elemento-arredondado botao-laranja carrinho__botao">
                     <img class="imagem-carrinho" src="./images/icon-cart.svg">
-                    <p>Add to cart</p>
+                    <span>Add to cart</span>
                 </button>
+                <div class="carrinho__popup">
+                    <h3 class="carrinho__popup--titulo">Cart</h3>
+                    <div class="carrinho__popup--conteudo">
+                        <p class="texto-carrinhoVazio">Your cart is empty.</p>
+                    </div>
+                </div>
             </div>
             
             
@@ -117,6 +120,7 @@
 <script src="./js/menu.js"></script>
 <script src="./js/toggleLightbox.js"></script>
 <script src="./js/changeImages.js"></script>
+<script src="./js/cartControl.js"></script>
 
 </body>
 </html>

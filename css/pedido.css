@@ -1,0 +1,19 @@
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.pedido__imagem {
+    height: 3rem;
+    border-radius: .25rem;
+}
+.pedido__info {
+    margin-left: .5rem;
+    width: 100%;
+}
+.pedido__excluir {
+    height: 1rem;
+    width: 1rem;
+}

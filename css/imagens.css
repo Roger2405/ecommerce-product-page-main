@@ -1,6 +1,7 @@
 .imagens {
     display: flex;
     flex-direction: column;
+    padding-top: 4.5rem;
 }
 
 .imagem-principal {
@@ -51,11 +52,11 @@
     .thumbnail:hover:not(.imagem-ativa) {
         transform: translateY(-.25rem);
         cursor: pointer;
-        filter:drop-shadow(0 .25rem 0 black) ;
+        filter:drop-shadow(0 .25rem 0 black) contrast(50%) brightness(150%);
         transition: .25s;
     }
     .thumbnail.imagem-ativa {
-        filter: brightness(110%);
+        filter: contrast(25%) brightness(180%);
         border: 3px solid var(--laranja);
     }
     

@@ -1,14 +1,10 @@
-.descricao__titulo{
+
+.subtitulo{
     color: var(--laranja);
     font-variant-caps:all-petite-caps;
 }
-.texto-destaque {
-    font-size: 1.75rem;
-    font-weight: var(--peso-texto-destaque);
-    margin: .5rem 0;
-}
 
-.descricao__texto {
+.descricao {
     color: var(--azul-cinzento-escuro);
     font-weight: var(--peso-texto-normal);
     padding: 1rem 0;
@@ -16,7 +12,11 @@
 }
 
 @media screen and (min-width:1440px) {
-    .descricao__sub-titulo {
+    .content {
+        padding-top: 8rem;
+
+    }
+    .titulo {
         font-size: 2.5rem;
         margin: 1rem 0;
     }
