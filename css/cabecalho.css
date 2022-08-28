@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-
+    z-index: 5;
     background-color: var(--branco);
     width: 100vw;
 }
@@ -26,8 +26,7 @@
     left: 0;
     top: 0;
     width: 100vw;
-    position: fixed;
-    z-index: 5;
+    position: absolute;
     transition: .5s;
 }
 .cabecalho__menu--botao {
@@ -54,7 +53,7 @@
 }
 .nav-oculto {
     
-    transform:scaleY(0) translateY(-100vh) translateX( -100vw);
+    transform: translateX( -100vw);
     transition: .5s;
 }
 

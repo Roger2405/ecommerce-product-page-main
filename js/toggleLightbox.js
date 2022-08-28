@@ -26,7 +26,6 @@ window.onresize = () => {
 
 window.addEventListener('keydown', () => {
     if(window.event.keyCode == '27') {
-        console.log('esc clicado');
         lightbox.classList.remove("lightbox-ativo");
     }
 
